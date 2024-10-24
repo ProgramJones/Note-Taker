@@ -1,3 +1,5 @@
+import moment from "moment";
+
 function Project() {
   this.screenshot = undefined;
   this.title = undefined;
@@ -35,6 +37,8 @@ Project.prototype.getContent = function () {
   return this.content;
 };
 Project.prototype.setContent = function () {};
+
+export { Project };
 
 // * 1. Make each project a proxy with:
 //          set trap to change last edited time
